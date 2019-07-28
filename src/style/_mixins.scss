@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin colorize-text($name) {
+    color: map-get($colors, $name);
+}
+
+@mixin colorize-bg($name){
+    background-color: map-get($map: $colors, $key: $name);
+}
